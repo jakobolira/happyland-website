@@ -631,6 +631,13 @@ h1 span {
     .case-card {
         min-height: 330px;
     }
+   .hero h1 {
+  font-size: clamp(2.8rem, 14vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
 
 }
 
