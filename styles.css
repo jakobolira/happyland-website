@@ -187,8 +187,8 @@ h1 span {
   font-size: clamp(3rem, 8vw, 6rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
-  max-width: 100%;
-  overflow-wrap: break-word;
+  margin: 0;
+  white-space: nowrap;
 }
 .hero-description {
     max-width: 580px;
@@ -631,13 +631,7 @@ h1 span {
     .case-card {
         min-height: 330px;
     }
-   .hero h1 {
-  font-size: clamp(2.8rem, 14vw, 4.5rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  word-break: normal;
-  overflow-wrap: anywhere;
-}
+   
 
 }
 
@@ -727,6 +721,13 @@ h1 span {
 
         align-items: flex-start;
     }
+   .hero h1 {
+  font-size: clamp(2.8rem, 14vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
 
 }
 /* =========================
