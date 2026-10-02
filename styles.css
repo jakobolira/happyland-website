@@ -729,6 +729,7 @@ h1 span {
   letter-spacing: -0.04em;
   word-break: normal;
   overflow-wrap: normal;
+   hyphens: none;
 
 }
    /* =========================
