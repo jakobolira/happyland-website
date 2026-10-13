@@ -785,3 +785,106 @@ h1 span {
   }
 
 }
+
+
+/* =========================
+   FORMS
+   ========================= */
+#happyland-contact-form {
+  width: 100%;
+  max-width: 680px;
+}
+
+#happyland-contact-form .form-group {
+  margin-bottom: 22px;
+}
+
+#happyland-contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+#happyland-contact-form input:not([type="checkbox"]),
+#happyland-contact-form select,
+#happyland-contact-form textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+#happyland-contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+#happyland-contact-form input:focus,
+#happyland-contact-form select:focus,
+#happyland-contact-form textarea:focus {
+  outline: 2px solid #555;
+  outline-offset: 2px;
+}
+
+#happyland-contact-form .hl-consent label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#happyland-contact-form .hl-consent input {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+#happyland-contact-form .hl-consent p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+#happyland-contact-form button {
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+#happyland-contact-form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+#hl-form-status {
+  margin-top: 16px;
+}
+
+#hl-calendly-section {
+  margin-top: 40px;
+}
+
+#hl-calendly-section[hidden] {
+  display: none;
+}
+
+#hl-calendly-embed {
+  width: 100%;
+  min-width: 320px;
+  height: 700px;
+}
+
+.hl-honeypot {
+  position: absolute;
+  left: -5000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
