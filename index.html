@@ -823,6 +823,101 @@
                     Mándame un mail →
                 </a>
 
+           <!-- FORM -->     
+<form id="happyland-contact-form"
+      action="https://formspree.io/f/xeaerlbg"
+      method="POST">
+
+  <div class="form-group">
+    <label for="hl-name">Nombre completo *</label>
+    <input
+      type="text"
+      id="hl-name"
+      name="name"
+      autocomplete="name"
+      placeholder="Tu nombre"
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="hl-email">Correo electrónico *</label>
+    <input
+      type="email"
+      id="hl-email"
+      name="email"
+      autocomplete="email"
+      placeholder="nombre@empresa.com"
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="hl-company">Empresa o negocio *</label>
+    <input
+      type="text"
+      id="hl-company"
+      name="company"
+      autocomplete="organization"
+      placeholder="Nombre de tu empresa"
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="hl-service">¿En qué te podemos ayudar? *</label>
+    <select id="hl-service" name="service" required>
+      <option value="" disabled selected>Selecciona un servicio</option>
+      <option value="Brand & Marketing Strategy">Brand & Marketing Strategy</option>
+      <option value="Digital & Performance">Digital & Performance</option>
+      <option value="Media & Retail Media">Media & Retail Media</option>
+      <option value="Measurement & Growth">Measurement & Growth</option>
+      <option value="Marketing Projects">Marketing Projects</option>
+      <option value="Consultoría / Otro">Consultoría / Otro</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="hl-message">Cuéntanos sobre tu proyecto *</label>
+    <textarea
+      id="hl-message"
+      name="message"
+      rows="5"
+      placeholder="¿Cuál es tu reto o qué te gustaría lograr?"
+      required></textarea>
+  </div>
+
+  <!-- Campo antispam invisible -->
+  <div class="hl-honeypot" aria-hidden="true">
+    <label for="hl-website">No completar este campo</label>
+    <input type="text" id="hl-website" name="_gotcha" tabindex="-1" autocomplete="off">
+  </div>
+
+  <input type="hidden" name="_subject" value="Nuevo contacto desde Happyland">
+  <input type="hidden" name="source" value="Sitio web Happyland">
+
+  <div class="form-group hl-consent">
+    <label>
+      <input type="checkbox" name="privacy_consent" value="accepted" required>
+      He leído el aviso de privacidad y acepto el tratamiento de mis datos.
+    </label>
+    <p>
+      <a href="/aviso-de-privacidad" target="_blank" rel="noopener">
+        Consultar aviso de privacidad
+      </a>
+    </p>
+  </div>
+
+  <button type="submit" id="hl-submit">
+    Enviar mensaje
+  </button>
+
+  <p id="hl-form-status" role="status" aria-live="polite"></p>
+</form>
+
+<!-- Calendly aparece después del envío exitoso -->
+<section id="hl-calendly-section" hidden>
+  <h3>¡Gracias por contactarnos!</h3>
+  <p>Tu mensaje fue enviado. Agenda una reunión para conversar sobre tu proyecto.</p>
+  <div id="hl-calendly-embed"></div>
+</section>
                 <p class="contact-signature">
                     <strong>Jacobo Lira</strong><br>
                     Founder · Happyland Media Group
